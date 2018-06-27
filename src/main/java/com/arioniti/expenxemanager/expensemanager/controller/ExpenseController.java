@@ -16,7 +16,6 @@ public class ExpenseController {
 
     @Autowired
     ExpenseService expenseService;
-
     @GetMapping
     public ResponseEntity<?> getAll() {
         List<Expense> result = expenseService.findAll();

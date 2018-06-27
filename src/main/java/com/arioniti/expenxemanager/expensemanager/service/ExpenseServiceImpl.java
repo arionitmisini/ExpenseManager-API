@@ -25,7 +25,7 @@ public class ExpenseServiceImpl implements ExpenseService {
 
     @Override
     public List<Expense> findByYear(int year) {
-        return findByYear(year);
+        return expenseRepository.findByYear(year);
     }
 
     @Override
